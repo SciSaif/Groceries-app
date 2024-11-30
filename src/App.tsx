@@ -4,6 +4,7 @@ import { ItemProvider } from './context/ItemProvider';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Checkout from './pages/Checkout';
+import Favorites from './pages/Favorites';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/favorites" element={<Favorites />} />
           </Routes>
         </div>
       </Router>
